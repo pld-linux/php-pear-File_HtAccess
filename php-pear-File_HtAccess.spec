@@ -1,8 +1,9 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          File
-%define         _subclass       HtAccess
+%define		_class		File
+%define		_subclass	HtAccess
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - manipulate .htaccess files
 Summary(pl):	%{_pearname} - manipulacje na plikach .htaccess
 Name:		php-pear-%{_pearname}
