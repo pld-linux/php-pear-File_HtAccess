@@ -1,11 +1,12 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          File
 %define         _subclass       HtAccess
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - manipulate .htaccess files
 Summary(pl):	%{_pearname} - manipulacje na plikach .htaccess
 Name:		php-pear-%{_pearname}
-Version:	0.9.1
+Version:	1.1.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -19,8 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Provides methods to manipulate .htaccess files.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Dostarcza metody do manipulowania plikami .htaccess.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
