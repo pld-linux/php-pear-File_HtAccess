@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 # Source0-md5:	d8db49e0b9d94f857f01977ef47c6ec8
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/File_HtAccess/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
