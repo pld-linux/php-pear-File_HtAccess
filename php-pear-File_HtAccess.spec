@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - manipulate .htaccess files
 Summary(pl):	%{_pearname} - manipulacje na plikach .htaccess
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
-Release:	4
+Version:	1.2.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	d8db49e0b9d94f857f01977ef47c6ec8
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	3860ee52e76201f854c89f8ef8c39132
 URL:		http://pear.php.net/package/File_HtAccess/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -31,6 +31,20 @@ Dostarcza metody do manipulowania plikami .htaccess.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+Requires:	%{name} = %{version}-%{release}
+AutoReq:	no
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 
@@ -47,3 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/*
