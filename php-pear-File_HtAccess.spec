@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - manipulate .htaccess files
-Summary(pl.UTF-8):   %{_pearname} - manipulacje na plikach .htaccess
+Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach .htaccess
 Name:		php-pear-%{_pearname}
 Version:	1.2.0
 Release:	1
@@ -33,7 +33,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{version}-%{release}
 AutoReq:	no
