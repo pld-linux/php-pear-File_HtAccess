@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - manipulate .htaccess files
 Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach .htaccess
 Name:		php-pear-%{_pearname}
-Version:	1.2.0
+Version:	1.2.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	3860ee52e76201f854c89f8ef8c39132
+# Source0-md5:	12cb3e3dbf284f9ffc5eca48a0a88bb5
 URL:		http://pear.php.net/package/File_HtAccess/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
